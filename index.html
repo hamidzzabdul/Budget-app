@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon">
+    <script src="https://use.fontawesome.com/296d4c5403.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://use.fontawesome.com/296d4c5403.js"></script>
+    <title>Budget App</title>
+</head>
+<div class="main-container">
+    <div class="ouptut-container">
+        <h2>Available Budget:</h2>
+        <p class="calc-display">0</p>
+        <div class="output-box">
+            <div class="income-box">
+                <p>Income</p>
+                <p class="inc-result">0</p>
+            </div>
+            <div class="expense-box">
+                <p>Expense</p>
+                <p class="exp-result">0 <span>-</span></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="input-nav">
+        <div class="nav-items">
+            <select class="options">
+                    <option value="inc">+</option>
+                    <option value="exp">-</option>
+                    </select>
+            <input class="description" type="text" placeholder="Add description">
+            <input class="description-value" type="number" placeholder="Value">
+            <button class="add__btn">
+                        <i class="ion-ios-checkmark-outline"></i>
+                    </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="income">
+            <h2 class="income-title">Income</h2>
+            <div class="income-list">
+                <!--<div class="items" id="income-0">
+                    <div class="item-description">Salary</div>
+                    <div class="right__clearfix">
+                        <div class="item-value">+ 2,100</div>
+                        <button class="delete-btn">
+                                    <i class="ion-ios-close-outline"></i>
+                                </button>
+                    </div>
+
+                </div>
+                <div class="items" id="income-0">
+                    <div class="item-description">Salary</div>
+                    <div class="right__clearfix">
+                        <div class="item-value">+ 2,100</div>
+                        <button class="delete-btn">
+                                    <i class="ion-ios-close-outline"></i>
+                                </button>
+                    </div>
+
+                </div>
+                <div class="items" id="income-0">
+                    <div class="item-description">Salary</div>
+                    <div class="right__clearfix">
+                        <div class="item-value">+ 2,100</div>
+                        <button class="delete-btn">
+                                    <i class="ion-ios-close-outline"></i>
+                                </button>
+                    </div>
+
+                </div>--->
+            </div>
+        </div>
+        <div class="expense">
+            <h2 class="expense-title">Expense</h2>
+            <div class="expense-list">
+                <!--<div class="items" id="income-0">
+                    <div class="item-description">Salary</div>
+                    <div class="right__clearfix">
+                        <div class="item__value">+ 2,100</div>
+                        <button class="delete-btn">
+                                    <i class="ion-ios-close-outline"></i>
+                                </button>
+                    </div>
+
+                </div>--->
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="./app.js"></script>
+<script src="https://use.fontawesome.com/296d4c5403.js"></script>
+</body>
+
+</html>
