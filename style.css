@@ -1,13 +1,12 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.ouptut-container{
+.ouptut-container {
     height: 40vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(./assets/How-to-create-project-budget.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(./assets/How-to-create-project-budget.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -18,17 +17,17 @@
     color: white;
 }
 
-h2{
+h2 {
     font-size: 1.8rem;
     font-family: 'Space Mono', monospace;
 }
 
-.calc-display{
+.calc-display {
     font-size: 2rem;
     font-family: 'Space Mono', monospace;
 }
 
-.output-box{
+.output-box {
     width: 55%;
     display: flex;
     justify-content: center;
@@ -40,7 +39,7 @@ h2{
 }
 
 .income-box,
-.expense-box{
+.expense-box {
     display: flex;
     justify-content: space-between;
     width: 300px;
@@ -52,118 +51,126 @@ h2{
     font-weight: 700;
 }
 
-.expense-box{
+.expense-box {
     background-color: #f46b45;
 }
 
-
 .inc-result,
-.exp-result{
+.exp-result {
     font-size: 1.3rem;
     font-weight: 100;
     color: white !important;
 }
 
-.inc-result{
-    margin-right: 45px;
+.inc-result {
+    margin-right: 55px;
 }
 
-span{
+.expense-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.54em;
+}
+
+.percentage-label {
     padding: 0px 10px;
     border-radius: 5px;
     background-color: #f87855;
     cursor: pointer;
 }
 
-.input-nav{
+.input-nav {
     padding: 14px;
-	border-bottom: 1px solid #e7e7e7;
-	background-color: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
 }
 
-.nav-items{
+.nav-items {
     margin: 0 auto;
     text-align: center;
 }
 
-.options{
+.options {
     width: 55px;
-	border: 1px solid #e7e7e7;
-	height: 40px;
-	font-size: 20px;
-	color: inherit;
-	background-color: #fff;
-	margin-right: 10px;
-	font-weight: 300;
-	transition: border 0.3s;
+    border: 1px solid #e7e7e7;
+    height: 40px;
+    font-size: 20px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
 }
 
 .description,
-.description-value{
-    border: 1px solid #e7e7e7;
-	background-color: #fff;
-	color: inherit;
-	font-family: inherit;
-	font-size: 20px;
-	padding: 12px 15px;
-	margin-right: 10px;
-	border-radius: 5px;
-	transition: border 0.3s;
-}
-.description {
-	width: 400px;
-}
 .description-value {
-	width: 100px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.description {
+    width: 400px;
+}
+
+.description-value {
+    width: 100px;
 }
 
 .add__btn {
-	font-size: 35px;
-	background: none;
-	border: none;
-	color: #28b9b5;
-	cursor: pointer;
-	display: inline-block;
-	vertical-align: middle;
-	line-height: 1.1;
-	margin-left: 10px;
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28b9b5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
 }
 
 .add__btn:active {
-	transform: translateY(2px);
+    transform: translateY(2px);
 }
 
 .options:focus,
 .description:focus,
-.description-value:focus{
-	outline: none;
-	border: 1px solid #28b9b5;
+.description-value:focus {
+    outline: none;
+    border: 1px solid #28b9b5;
 }
 
 .add__btn:focus {
-	outline: none;
+    outline: none;
 }
 
-@media all and (max-width: 700px){
-    .description{
+@media all and (max-width: 700px) {
+    .description {
         width: 230px;
         font-size: 1rem;
     }
-    .description-value{
+    .description-value {
         text-align: center;
-        width: 80px; 
+        width: 80px;
         font-size: 1rem !important;
     }
-    .description-value{
-	    font-size: 15px !important;
-	    padding: 12px 15px;
-    }   
+    .description-value {
+        font-size: 15px !important;
+        padding: 12px 15px;
+    }
 }
 
 
 /***** display income outcomes*****/
 
-.container{
+.container {
     width: 70%;
     height: 100%;
     justify-content: center;
@@ -172,24 +179,25 @@ span{
     gap: 1rem;
 }
 
-.income{
+.income {
     float: left;
     width: 60%;
 }
 
-.expense{
+.expense {
     float: left;
     width: 60%;
 }
 
-.income-title{
+.income-title {
     color: #5691c8;
     font-family: 'Space Mono', monospace;
     font-weight: 200;
     font-size: 1.4rem;
     margin-left: 10px;
 }
-.expense-title{
+
+.expense-title {
     color: #f46b45;
     font-family: 'Space Mono', monospace;
     font-weight: 200;
@@ -197,24 +205,26 @@ span{
     margin-left: 10px;
 }
 
-.income-list,.expense-list{
+.income-list,
+.expense-list {
     margin: 0 10px;
 }
 
-.item-description{
+.item-description {
     margin-left: 10px;
 }
 
-.item-value{
+.item-value {
     margin-right: 10px;
 }
+
 
 /***.item-value:hover{
     margin-right: 20px;
     transition: all .4s;
 }**/
 
-.items{
+.items {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -225,38 +235,38 @@ span{
     border-radius: 5px;
     border: #f7f7f7;
 }
-.right__clearfix{
+
+.right__clearfix {
     display: flex;
     align-items: center;
 }
 
-
-.delete-btn{
+.delete-btn {
     margin: 0px 10px;
-    font-size:20px;
-	background: none;
-	border: none;
-	color: #28b9b5;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #28b9b5;
     cursor: pointer;
-    display: none;
 }
 
+.delete-btn:hover {
+    transition: all .4s ease-in-out;
+    transform: scale(1.3, 1.3);
+}
 
-.items:hover{
+.items:hover {
     cursor: pointer;
     border: 1px solid #f46b45;
     transition: border .3s;
 }
 
-@media all and (max-width: 800px){
-    .container{
+@media all and (max-width: 800px) {
+    .container {
         display: flex;
         flex-direction: column;
     }
-    .items{
+    .items {
         width: 300px;
     }
-
 }
-
-
